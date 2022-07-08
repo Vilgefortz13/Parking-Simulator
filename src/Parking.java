@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Parking {
-    private final List<Integer> carsCount = new ArrayList<>();
+    private final List<Car> cars = new ArrayList<>();
     private final List<Boolean> parkingSpaces = new ArrayList<>();
 
-    public List<Integer> getCarsCount() {
-        return carsCount;
+    public List<Car> getCars() {
+        return cars;
     }
 
     public List<Boolean> getParkingSpaces() {
