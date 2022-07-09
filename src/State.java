@@ -2,8 +2,10 @@ public enum State {
     IN_PARKING("in the parking") {
         @Override
         public void onTheRoad(Car car) throws Exception {
+            Parking parking = new Parking();
             car.setStateObj(State.IN_WAY);
             System.out.println("The car pulled out of the parking lot");
+            parking.getParkingPlaces().add(false);
         }
 
         @Override
@@ -22,8 +24,10 @@ public enum State {
 
         @Override
         public void toTheParking(Car car) throws Exception {
+            Parking parking = new Parking();
             car.setStateObj(State.IN_PARKING);
             System.out.println("The car arrived at the parking lot");
+            parking.getParkingPlaces().add(true);
         }
     };
 
