@@ -7,6 +7,5 @@ public class Main {
     private static final List<Boolean> parkingPlaces = parking.getParkingPlaces();
     private static final Set<Car> cars = parking.getCars();
     public static void main(String[] args) {
-
     }
 }
