@@ -1,11 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class Parking {
-    private final List<Car> cars = new ArrayList<>();
+    private Set<Car> cars;
     private final List<Boolean> parkingSpaces = new ArrayList<>();
 
-    public List<Car> getCars() {
+    public Set<Car> getCars() {
         return cars;
     }
 
