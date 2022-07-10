@@ -1,8 +1,8 @@
 import java.time.LocalDate;
-import java.util.concurrent.ExecutionException;
+import java.util.Random;
 
 public class Car {
-    private Integer plateNumber;
+    private Integer plateNumber = new Random().nextInt(1000, 10000);
     private String state;
     private LocalDate date;
     private LocalDate time;
@@ -26,6 +26,10 @@ public class Car {
 
     public State getStateObj() {
         return stateObj;
+    }
+
+    public void setPlateNumber(Integer plateNumber) {
+        this.plateNumber = plateNumber;
     }
 
     public void setStateObj(State stateObj) {
